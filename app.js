@@ -57,12 +57,12 @@ ParallelogramSubmit.addEventListener('click', function () {
   ParallValue.innerText = areys;
 });
 
-//-----------thride  arey style of js-----------
+//-----------fourth  arey style of js-----------
 
 function myFunction() {
   const basis = myValue('rhombusBasic');
   const height = myValue('rhombusAreya');
-  const valu = basis * height;
+  const valu = 0.5 * basis * height;
   areyValeSet('rhombusValue', valu);
 }
 
@@ -79,3 +79,22 @@ function areyValeSet(element, iputValue) {
   const value = (areyaVale.innerText = iputValue);
   return value;
 }
+
+//-------five  section styel withh js------
+const PenSubmit = document.getElementById('PenSubmit');
+PenSubmit.addEventListener('click', function () {
+  const Pentagonbasic = myValue('Pentagonbasic');
+  const PentagonInputAreya = myValue('PentagonInputAreya');
+
+  const areya = 0.5 * Pentagonbasic * PentagonInputAreya;
+  areyValeSet('PentagonValue', areya);
+});
+//-------sixe secetion is every ting done--------
+const ellipSubmit = document.getElementById('ellipSubmit');
+ellipSubmit.addEventListener('click', function () {
+  const basice = myValue('ellipseBasice');
+  const height = myValue('ellipseInputAreya');
+
+  const areya = 0.5 * basice * height;
+  areyValeSet('ellipseValue', areya);
+});

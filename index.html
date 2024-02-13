@@ -10,9 +10,19 @@
 </head>
 
 <body>
-  <header></header>
+  <header class="w-[90%] mx-auto">
+    <nav class="flex justify-between items-center p-4 mt-4 bg-[#1090D81A]">
+      <div>
+        <h2 class="text-4xl font-bold">Interactive</h2>
+        <h2 class="text-2xl font-bold text-gray-400">Geometry genius</h2>
+      </div>
+      <div>
+        <button class="btn btn-primary text-white font-bold text-2xl">Blog</button>
+      </div>
+    </nav>
+  </header>
   <main>
-    <section class=" w-[95%] mx-auto mt-10 grid lg:flex gap-4 ">
+    <section class=" w-[90%] mx-auto mt-10 grid lg:flex gap-4 ">
 
       <div class=" gap-5 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
         <!---frist cord is ready------>
@@ -115,11 +125,18 @@
             <h2 class="card-title justify-center ">Pentagon</h2>
             <p class="my-4">Ar00 (A)=0.5 x b x h</p>
             <div class="flex gap-3 px-5 rounded-lg my-6">
-              <input class="w-full p-2 bg-[#dddd] text-2xl" type="text" placeholder="b"><span>Cm</span>
-              <input class="w-full p-2 bg-[#dddd] text-2xl" type="text" placeholder="h"><span>Cm</span>
+              <input id="Pentagonbasic" class="w-full p-2 bg-[#dddd] text-2xl" type="text"
+                placeholder="b"><span>Cm</span>
+              <input id="PentagonInputAreya" class="w-full p-2 bg-[#dddd] text-2xl" type="text"
+                placeholder="h"><span>Cm</span>
+            </div>
+
+            <div>
+              <p class="text-2xl mb-4">Areya: <span id="PentagonValue"></span><span>cm</span><sup>2</sup>
+              </p>
             </div>
             <div class="card-actions ">
-              <button class="btn btn-primary w-full text-white text-xl">Calculate</button>
+              <button id="PenSubmit" class="btn btn-primary w-full text-white text-xl">Calculate</button>
             </div>
           </div>
         </div>
@@ -131,19 +148,24 @@
             <h2 class="card-title justify-center ">Ellipse</h2>
             <p class="my-4">Ar00 (A)=0.5 x b x h</p>
             <div class="flex gap-3 px-5 rounded-lg my-6">
-              <input class="w-full p-2 bg-[#dddd] text-2xl" type="text" placeholder="b"><span>Cm</span>
-              <input class="w-full p-2 bg-[#dddd] text-2xl" type="text" placeholder="h"><span>Cm</span>
+              <input id="ellipseBasice" class="w-full p-2 bg-[#dddd] text-2xl" type="text"
+                placeholder="b"><span>Cm</span>
+              <input id="ellipseInputAreya" class="w-full p-2 bg-[#dddd] text-2xl" type="text"
+                placeholder="h"><span>Cm</span>
+            </div>
+
+            <div>
+              <p class="text-2xl mb-4">Areya: <span id="ellipseValue"></span><span>cm</span><sup>2</sup>
+              </p>
             </div>
             <div class="card-actions ">
-              <button class="btn btn-primary w-full text-white text-xl">Calculate</button>
+              <button id="ellipSubmit" class="btn btn-primary w-full text-white text-xl">Calculate</button>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="resultAreya" class="w-[38%] mx-auto text-center  border-2 ">
-        <h2>arey colcultore</h2>
-      </div>
+
     </section>
 
   </main>
